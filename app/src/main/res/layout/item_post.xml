@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_post_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title loading.."
+        android:textColor="#6a6a6a"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_post_body_tv"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:text="Body loading.."
+        android:textSize="11sp"
+        android:textColor="#8a8a8a" />
+
+</LinearLayout>
