@@ -2,6 +2,7 @@ package com.tommyjepsen.rxandroidexample;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.tommyjepsen.rxandroidexample.Api.Api;
@@ -15,6 +16,8 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 public class PostActivity extends AppCompatActivity {
+
+    public static final String TAG = PostActivity.class.getName();
 
     @Bind(R.id.item_post_title_tv)
     TextView itemPostTitleTv;
@@ -43,7 +46,7 @@ public class PostActivity extends AppCompatActivity {
 
                     @Override
                     public void onError(Throwable e) {
-
+                        Log.e(TAG, "onError: ", e);
                     }
 
                     @Override
