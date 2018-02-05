@@ -12,7 +12,7 @@ import com.tommyjepsen.rxandroidexample.Api.Models.Post;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import rx.Observable;
 import rx.Observer;
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayList<Post> posts = new ArrayList<>();
 
-    @Bind(R.id.activity_main_rv)
+    @BindView(R.id.activity_main_rv)
     RecyclerView activityMainRv;
     PostAdapter postAdapter;
 

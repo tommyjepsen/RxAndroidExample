@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.tommyjepsen.rxandroidexample.Api.Api;
 import com.tommyjepsen.rxandroidexample.Api.Models.Post;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import rx.Observable;
 import rx.Observer;
@@ -19,9 +19,9 @@ public class PostActivity extends AppCompatActivity {
 
     public static final String TAG = PostActivity.class.getName();
 
-    @Bind(R.id.item_post_title_tv)
+    @BindView(R.id.item_post_title_tv)
     TextView itemPostTitleTv;
-    @Bind(R.id.item_post_body_tv)
+    @BindView(R.id.item_post_body_tv)
     TextView itemPostBodyTv;
 
     int postId = 0;
